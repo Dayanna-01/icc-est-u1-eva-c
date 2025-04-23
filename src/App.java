@@ -1,3 +1,6 @@
+import Models.Book;
+import Controllers.BookController;
+import Views.ViewConsole;
 public class App {
     public static void main(String[] args) throws Exception {
 
@@ -33,6 +36,15 @@ public class App {
                 new Book("Deep Learning", 2016),
                 new Book("The Elements of Statistical Learning", 2001)
         };
+        // Método para ordenar libros por nombre en orden descendente
+public void sortByName(Book[] libros) {
+    // Implementación pendiente
+}
 
+// Método para buscar un libro por nombre, ignorando mayúsculas y minúsculas
+public Book searchByName(Book[] libros, String name) {
+    // Implementación pendiente
+    return null;
+}
     }
 }
