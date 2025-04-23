@@ -48,12 +48,17 @@ public class App {
                     }
                 }
             }
-    // Implementación pendiente
-}
+        }
 
         // Método para buscar un libro por nombre, ignorando mayúsculas y minúsculas
         public Book searchByName(Book[] libros, String name) {
-         // Implementación pendiente
+            System.out.println("Buscando libro por nombre: " + name);
+            for (Book libro : libros) {
+                if (libro.getName().equalsIgnoreCase(name)) {
+                    return libro;
+                }
+            }
+            System.out.println("Libro no encontrado.");
          return null;
         }
     }
